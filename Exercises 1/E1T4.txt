@@ -1,0 +1,9 @@
+- Poor practice 1
+Current ACL rules of public and private subnet network are allowing all access on all ports from all ports.
+
+-> ACL rules should provide access for neccessary parties only. We shouldn't make attacker's life becomes easier, minimize the probability of malicious actions just by config ACL rules.
+
+- Poor practice 2
+Current policy of this instance is allowing application server to access to all S3 buckets.
+
+-> The same principle above should be applied on this case. We should open access to only needed bucket for application server.
