@@ -1,0 +1,15 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project. Provide recommendations on how to remediate the vulnerabilities. Submit your findings in E2T2.txt
+
+Suggestion:
+
+- IAM Password policy is not specified yet: Specify IAM password policy.
+
+- Attached EBS volumes hasn't been encrypted: Enable EBS server side encryption.
+
+- S3 buckets should have server-side encryption: Enable server side encryption for S3.
+
+- All HTTP request should be redirected to HTTPS by Load Balancer: Configure Load Balancer to redirect HTTP requests to HTTPS
+
+- Process sshd could be access on port 22 on EC2 instance: Close unnessary ports on EC2.
+
+- S3 buckets don't have logs: Enable S3 logging.

@@ -1,0 +1,8 @@
+1. What findings were detected related to the brute force attack?
+Related to brute force attacks. Guard Duty has 2 finding:
+- UnauthorizedAccess:EC2/SSHBruteForce (high severity): When an instance is used to perform brute force attack.
+- UnauthorizedAccess:EC2/SSHBruteForce (low severity): When an instance is being atttacked by brute force attack.
+
+2. Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information?
+So Guard Duty is using AWS CloudTrail, VPC Flow Logs and DNS Logs as source of information for attacks.
+The unsual large amount of request is being sent or sent to an IP showing that these activities is related to SSH brute force attack.
